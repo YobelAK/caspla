@@ -58,12 +58,8 @@ export function OffersGrid() {
     <Box style={{ width: '100%', padding: '0 32px 64px' }}>
       <Container size="xl">
         <SimpleGrid
-          cols={3}
+          cols={{ base: 1, md: 2, lg: 3 }}
           spacing={24}
-          breakpoints={[
-            { maxWidth: 'md', cols: 2 },
-            { maxWidth: 'sm', cols: 1 },
-          ]}
         >
           {offers.map(offer => (
             <OfferCard key={offer.id} {...offer} />

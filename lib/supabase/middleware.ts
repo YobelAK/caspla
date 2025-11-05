@@ -47,15 +47,18 @@ export async function updateSession(request: NextRequest) {
   const { data } = await supabase.auth.getClaims();
   const user = data?.claims;
 
-  if (
-    request.nextUrl.pathname !== "/" &&
-    !user &&
-    !request.nextUrl.pathname.startsWith("/login") &&
-    !request.nextUrl.pathname.startsWith("/auth")
-  ) {
-    // no user, potentially respond by redirecting the user to the login page
+  // Only protect explicit routes. Public pages (e.g., homepage, tour, speedboat, etc.) remain accessible.
+  const protectedPaths = ["/profile", "/protected"];
+  const pathname = request.nextUrl.pathname;
+  const isProtected = protectedPaths.some(
+    (p) => pathname === p || pathname.startsWith(`${p}/`),
+  );
+
+  if (!user && isProtected) {
     const url = request.nextUrl.clone();
     url.pathname = "/auth/login";
+    // Preserve original destination for post-login redirect
+    url.searchParams.set("redirect", `${pathname}${request.nextUrl.search}`);
     return NextResponse.redirect(url);
   }
 

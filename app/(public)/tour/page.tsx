@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import { Box, Container, Group } from '@mantine/core';
 import { Header } from '@/components/layout/header';
 import { Footer } from '@/components/layout/footer';
@@ -12,7 +12,9 @@ import { TourRedirector } from '@/components/tour/redirector';
 export default function TourPage() {
   return (
     <Box style={{ minHeight: '100vh', backgroundColor: '#f9fafb' }}>
-      <TourRedirector />
+      <Suspense fallback={null}>
+        <TourRedirector />
+      </Suspense>
       <Header />
       {/* Hero Section */}
       <Hero />

@@ -54,12 +54,8 @@ export default function Page() {
             </Text>
 
             <SimpleGrid
-              cols={3}
+              cols={{ base: 1, md: 2, lg: 3 }}
               spacing={24}
-              breakpoints={[
-                { maxWidth: 1024, cols: 2 },
-                { maxWidth: 640, cols: 1 },
-              ]}
             >
               {experiences.map((experience) => (
                 <ExperienceCard

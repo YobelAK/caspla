@@ -110,9 +110,8 @@ export function AddOnDetailsModal({
 
             {/* Information Cards */}
             <SimpleGrid
-              cols={3}
+              cols={{ base: 1, md: 3 }}
               spacing="md"
-              breakpoints={[{ maxWidth: 'md', cols: 1 }]}
             >
               <Paper bg="#f9fafb" radius="xl" p="lg">
                 <Group align="flex-start" gap="sm">

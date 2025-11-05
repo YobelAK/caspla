@@ -204,7 +204,6 @@ export default function AddOnsPage() {
               <SimpleGrid 
                 cols={{ base: 1, md: 2 }} 
                 spacing="xl"
-                breakpoints={[{ maxWidth: 'md', cols: 1 }]}
               >
                 {filteredAddOns.map(addon => (
                   <AddOnCard 
@@ -236,8 +235,9 @@ export default function AddOnsPage() {
       {/* Add-On Details Modal */}
       {selectedAddOnForDetails && (
         <AddOnDetailsModal
+          opened={!!selectedAddOnForDetails}
           addOn={selectedAddOnForDetails}
-          isAdded={selectedAddOns.includes(selectedAddOnForDetails.id)}
+          isAdded={selectedAddOns.includes(selectedAddOnForDetails.id)}   
           onBack={handleCloseModal}
           onClose={handleCloseModal}
           onAddToTrip={handleAddToTripFromModal}

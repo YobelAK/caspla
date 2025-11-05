@@ -6,8 +6,8 @@ import { DateInput } from '@mantine/dates';
 import { useRouter } from 'next/navigation';
 
 export function TourBookingCard() {
-  const [date, setDate] = useState<Date | null>(new Date());
-  const [guests, setGuests] = useState<number | ''>(2);
+  const [date, setDate] = useState<string | null>(null);
+  const [guests, setGuests] = useState<number | string>(2);
   const pricePerGuest = 850000; // IDR
   const total = (typeof guests === 'number' ? guests : 0) * pricePerGuest;
   const router = useRouter();

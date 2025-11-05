@@ -64,7 +64,7 @@ export default function Page() {
             </Box>
 
             {/* Support Options */}
-            <SimpleGrid cols={2} spacing={24} style={{ marginBottom: 48 }} breakpoints={[{ maxWidth: 640, cols: 1 }]}>
+            <SimpleGrid cols={{ base: 1, sm: 2 }} spacing={24} style={{ marginBottom: 48 }}>
               {/* Live Chat */}
               <Box
                 style={{

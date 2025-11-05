@@ -35,12 +35,8 @@ export function TopDestinations() {
         Top Destinations You Can Visit
       </Title>
       <SimpleGrid
-        cols={4}
+        cols={{ base: 1, md: 2, lg: 4 }}
         spacing={24}
-        breakpoints={[
-          { maxWidth: 'md', cols: 2 },
-          { maxWidth: 'sm', cols: 1 },
-        ]}
       >
         {destinations.map((dest) => (
           <Box

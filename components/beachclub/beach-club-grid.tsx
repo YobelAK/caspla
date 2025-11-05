@@ -133,12 +133,8 @@ export function BeachClubGrid() {
       
       {/* Beach Club Grid */}
       <SimpleGrid
-        cols={3}
+        cols={{ base: 1, md: 2, lg: 3 }}
         spacing={24}
-        breakpoints={[
-          { maxWidth: 'md', cols: 2 },
-          { maxWidth: 'sm', cols: 1 },
-        ]}
       >
         {beachClubs.map((beachClub, index) => (
           <BeachClubCard

@@ -81,13 +81,8 @@ export function Testimonials() {
         </Group>
         
         <SimpleGrid
-          cols={4}
+          cols={{ base: 1, md: 2, lg: 4 }}
           spacing="lg"
-          breakpoints={[
-            { maxWidth: 'lg', cols: 4 },
-            { maxWidth: 'md', cols: 2 },
-            { maxWidth: 'sm', cols: 1 }
-          ]}
         >
           {testimonials.map((testimonial) => (
             <Card

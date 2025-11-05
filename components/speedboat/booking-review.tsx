@@ -100,9 +100,8 @@ export function BookingReview({
         <Stack gap="md">
           <Text size="sm" fw={600} c="dark">Additional Packages</Text>
           <SimpleGrid
-            cols={2}
+            cols={{ base: 1, md: 2 }}
             spacing="md"
-            breakpoints={[{ maxWidth: 'md', cols: 1 }]}
           >
             <PackageCard 
               image="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=400" 
