@@ -1,7 +1,17 @@
 import type { Metadata } from "next";
 import { Geist } from "next/font/google";
-import { ThemeProvider } from "next-themes";
-import "./globals.css";
+import { ColorSchemeScript, MantineProvider } from '@mantine/core';
+import { Notifications } from '@mantine/notifications';
+import { ModalsProvider } from '@mantine/modals';
+import { theme } from '@/lib/theme';
+import '@mantine/core/styles.css';
+import '@mantine/notifications/styles.css';
+import '@mantine/dates/styles.css';
+import '@mantine/carousel/styles.css';
+import '@mantine/spotlight/styles.css';
+import '@mantine/code-highlight/styles.css';
+import '@mantine/tiptap/styles.css';
+import '@mantine/dropzone/styles.css';
 
 const defaultUrl = process.env.VERCEL_URL
   ? `https://${process.env.VERCEL_URL}`
@@ -26,15 +36,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${geistSans.className} antialiased`}>
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        >
-          {children}
-        </ThemeProvider>
+      <head>
+        <ColorSchemeScript />
+      </head>
+      <body style={{ fontFamily: geistSans.style.fontFamily }}>
+        <MantineProvider theme={theme}>
+          <ModalsProvider>
+            <Notifications />
+            {children}
+          </ModalsProvider>
+        </MantineProvider>
       </body>
     </html>
   );
