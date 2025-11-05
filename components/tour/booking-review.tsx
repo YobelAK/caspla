@@ -18,16 +18,16 @@ export function BookingReview({
       <Stack gap="xl">
         <Title order={2} size="xl" fw={700} c="#284361">Review Your Booking</Title>
         
-        {/* Trip Details */}
+        {/* Tour Details */}
         <Stack gap="md">
-          <Text size="sm" fw={600} c="dark">Trip Details</Text>
+          <Text size="sm" fw={600} c="dark">Tour Details</Text>
           <Stack gap="md">
             <Group align="flex-start" gap="md">
               <IconAnchor size={20} color="#6b7280" style={{ marginTop: 2 }} />
               <Stack gap="xs">
-                <Text fw={500} c="dark">Route: Sanur → Nusa Penida</Text>
-                <Text size="sm" c="dimmed">Boat: Caspla Fast Boat</Text>
-                <Text size="sm" c="dimmed">Seat(s): A1, A2</Text>
+                <Text fw={500} c="dark">Tour: Ubud Cultural Highlights — Full Day</Text>
+                <Text size="sm" c="dimmed">Guide: Local Certified Guide</Text>
+                <Text size="sm" c="dimmed">Pickup: Hotel (Ubud)</Text>
               </Stack>
             </Group>
             <Group align="center" gap="md">
@@ -36,7 +36,7 @@ export function BookingReview({
             </Group>
             <Group align="center" gap="md">
               <IconClock size={20} color="#6b7280" />
-              <Text c="dark">Departure: 09:00 AM → 09:45 AM</Text>
+              <Text c="dark">Time: 08:00 AM – 05:00 PM</Text>
             </Group>
           </Stack>
         </Stack>

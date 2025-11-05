@@ -18,16 +18,16 @@ export function BookingReview({
       <Stack gap="xl">
         <Title order={2} size="xl" fw={700} c="#284361">Review Your Booking</Title>
         
-        {/* Trip Details */}
+        {/* Beach Club Details */}
         <Stack gap="md">
-          <Text size="sm" fw={600} c="dark">Trip Details</Text>
+          <Text size="sm" fw={600} c="dark">Beach Club Details</Text>
           <Stack gap="md">
             <Group align="flex-start" gap="md">
               <IconAnchor size={20} color="#6b7280" style={{ marginTop: 2 }} />
               <Stack gap="xs">
-                <Text fw={500} c="dark">Route: Sanur → Nusa Penida</Text>
-                <Text size="sm" c="dimmed">Boat: Caspla Fast Boat</Text>
-                <Text size="sm" c="dimmed">Seat(s): A1, A2</Text>
+                <Text fw={500} c="dark">Beach Club: Caspla Beach Club (Seminyak)</Text>
+                <Text size="sm" c="dimmed">Seating: Daybed A1, A2</Text>
+                <Text size="sm" c="dimmed">Package: Day Pass – Standard</Text>
               </Stack>
             </Group>
             <Group align="center" gap="md">
@@ -36,7 +36,7 @@ export function BookingReview({
             </Group>
             <Group align="center" gap="md">
               <IconClock size={20} color="#6b7280" />
-              <Text c="dark">Departure: 09:00 AM → 09:45 AM</Text>
+              <Text c="dark">Time: 11:00 AM – 04:00 PM</Text>
             </Group>
           </Stack>
         </Stack>
@@ -111,13 +111,13 @@ export function BookingReview({
             />
             <PackageCard 
               image="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=400" 
-              title="Balinese Lunch Package" 
+              title="Beach Club Lunch Package" 
               originalPrice="IDR 120,000" 
               price="IDR 85,000" 
             />
             <PackageCard 
               image="https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=400" 
-              title="Snorkeling Experience" 
+              title="Pool Float Rental" 
               originalPrice="IDR 200,000" 
               price="IDR 120,000" 
             />

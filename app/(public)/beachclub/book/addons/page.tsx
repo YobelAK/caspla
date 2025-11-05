@@ -38,36 +38,36 @@ export default function AddOnsPage() {
 
   const addOns: AddOn[] = [
     {
-      id: 'watersport-adventure',
-      title: 'Watersport Adventure',
-      description: 'Try various water activities on Jet Ski in Nusa Penida!',
-      duration: '1.5 hours',
-      price: 150000,
-      originalPrice: 250000,
-      discount: '-40% OFF',
+      id: 'daybed-upgrade',
+      title: 'Daybed Upgrade',
+      description: 'Upgrade to premium daybed by the main pool',
+      duration: 'Full day',
+      price: 200000,
+      originalPrice: 300000,
+      discount: '33% OFF',
       image: 'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800&q=80',
       badge: 'Popular' as const,
-      category: 'watersport',
-      location: 'Nusa Penida',
+      category: 'beach-club',
+      location: 'Seminyak',
       availability: 'Daily',
-      about: 'Experience the thrill of riding a jet ski in the beautiful waters of Bali. Our professional instructors will guide you through a 15-minute solo ride, ensuring both safety and maximum enjoyment.',
-      included: ['Professional equipment', 'Safety briefing', 'Instructor guidance', 'Insurance coverage']
+      about: 'Enjoy a premium daybed with better views and comfort, perfect for relaxing by the pool.',
+      included: ['Premium daybed', 'Towel service', 'Welcome drink']
     },
     {
-      id: 'nusa-penida-tour',
-      title: 'Nusa Penida Tour Combo',
-      description: "Visit Kelingking Beach, Angel's Billabong & Crystal Bay",
-      duration: '8 hours',
+      id: 'cabana-upgrade',
+      title: 'Cabana Upgrade',
+      description: 'Private cabana near the main pool with dedicated service',
+      duration: 'Full day',
       price: 350000,
       originalPrice: 500000,
       discount: '30% OFF',
       image: 'https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=800&q=80',
       badge: 'Limited Offer' as const,
-      category: 'tours',
-      location: 'Nusa Penida',
+      category: 'beach-club',
+      location: 'Seminyak',
       availability: 'Daily',
-      about: 'Explore the most iconic spots in Nusa Penida with our comprehensive tour package. Visit the famous Kelingking Beach, swim at Angel\'s Billabong, and relax at Crystal Bay.',
-      included: ['Transportation', 'Professional guide', 'Entrance fees', 'Lunch', 'Snorkeling equipment']
+      about: 'Upgrade to a private cabana for premium comfort, shade, and personalized service throughout the day.',
+      included: ['Private cabana', 'Personal host', 'Welcome drink', 'Towel service']
     },
     {
       id: 'vip-beach-club',
@@ -86,50 +86,50 @@ export default function AddOnsPage() {
       included: ['Day bed access', 'Welcome drinks', 'Pool access', 'WiFi', 'Towel service']
     },
     {
-      id: 'balinese-lunch',
-      title: 'Balinese Lunch Package',
-      description: 'Authentic local cuisine served in a beautiful setting',
+      id: 'beachclub-lunch',
+      title: 'Beach Club Lunch Package',
+      description: 'Signature dishes served at Caspla Beach Club',
       duration: '1.5 hours',
       price: 85000,
       originalPrice: 120000,
       discount: '29% OFF',
       image: 'https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=800&q=80',
-      category: 'combo',
-      location: 'Ubud',
+      category: 'beach-club',
+      location: 'Seminyak',
       availability: 'Daily',
-      about: 'Savor authentic Balinese cuisine prepared with traditional recipes and fresh local ingredients.',
-      included: ['Traditional Balinese meal', 'Welcome drink', 'Cultural performance', 'Recipe card']
+      about: 'Savor signature beach club dishes prepared with fresh local ingredients, served with ocean views.',
+      included: ['Main course', 'Welcome drink', 'Dessert', 'Towel service']
     },
     {
       id: 'professional-photography',
       title: 'Professional Photography',
-      description: 'Capture your memories with a professional photographer',
+      description: 'Capture your memories at the beach club venue',
       duration: '2 hours',
       price: 300000,
       originalPrice: 450000,
       discount: '33% OFF',
       image: 'https://images.unsplash.com/photo-1542038784456-1ea8e935640e?w=800&q=80',
       badge: 'Limited Offer' as const,
-      category: 'combo',
-      location: 'Various locations',
+      category: 'beach-club',
+      location: 'Seminyak',
       availability: 'Daily',
-      about: 'Professional photography session to capture your best moments in Bali\'s most beautiful locations.',
+      about: 'Professional photography session to capture your best moments around the beach club.',
       included: ['Professional photographer', '50+ edited photos', 'Online gallery', 'Print-ready files']
     },
     {
-      id: 'snorkeling-experience',
-      title: 'Snorkeling Experience',
-      description: 'Explore the underwater world with professional guides',
-      duration: '3 hours',
+      id: 'pool-float-rental',
+      title: 'Pool Float Rental',
+      description: 'Colorful floats for Instagrammable poolside moments',
+      duration: 'Full day',
       price: 120000,
       originalPrice: 200000,
-      discount: '-40% OFF',
+      discount: '40% OFF',
       image: 'https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=800&q=80',
-      category: 'watersport',
-      location: 'Nusa Penida',
+      category: 'beach-club',
+      location: 'Seminyak',
       availability: 'Daily',
-      about: 'Discover the vibrant underwater world of Nusa Penida with our experienced guides.',
-      included: ['Snorkeling equipment', 'Professional guide', 'Underwater photos', 'Safety briefing']
+      about: 'Add fun to your pool day with stylish floats perfect for photos and relaxation.',
+      included: ['1 premium pool float', 'Inflation service', 'Towel service']
     }
   ];
 
@@ -219,9 +219,9 @@ export default function AddOnsPage() {
           </GridCol>
           <GridCol span={{ base: 12, lg: 4 }}>
               <BookingSummary 
-                trip="Sanur → Nusa Penida" 
-                departureDate="12 Oct 2025, 09:00 AM" 
-                passengers="2 Adults" 
+                trip="Day Pass – Caspla Beach Club" 
+                departureDate="12 Oct 2025" 
+                passengers="2 Guests" 
                 passengerPrice={200000} 
                 portFee={10000} 
                 addOns={selectedAddOnsData} 

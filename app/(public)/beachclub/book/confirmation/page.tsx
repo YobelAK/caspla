@@ -61,10 +61,10 @@ export default function BookingConfirmationPage() {
               <IconCheck size={32} />
             </ThemeIcon>
             <Title order={1} size="2xl" fw={700} c="#284361" ta="center">
-              Your Tour Booking is Confirmed!
+              Your Beach Club Booking is Confirmed!
             </Title>
             <Text c="dimmed" ta="center" mb="xs">
-              Thank you for booking with Caspia Bali. Your payment via QRIS has
+              Thank you for booking with Caspla Bali. Your payment via QRIS has
               been received successfully.
             </Text>
             <Text c="dimmed" ta="center">
@@ -109,18 +109,18 @@ export default function BookingConfirmationPage() {
                     </Box>
                     <Box>
                       <Text size="sm" c="dimmed" mb={4}>Guests</Text>
-                      <Text fw={600} c="#284361">2 Adults</Text>
+                      <Text fw={600} c="#284361">2 Guests</Text>
                     </Box>
                     <Box>
                       <Text size="sm" c="dimmed" mb={4}>Provider Name</Text>
                       <Text fw={600} c="#284361">
-                        Caspia Bali Speedboat
+                        Caspla Beach Club
                       </Text>
                     </Box>
                     <Box>
-                      <Text size="sm" c="dimmed" mb={4}>Route</Text>
+                      <Text size="sm" c="dimmed" mb={4}>Venue</Text>
                       <Text fw={600} c="#284361">
-                        Sanur → Nusa Penida
+                        Seminyak, Bali
                       </Text>
                     </Box>
                     <Box>
@@ -136,7 +136,7 @@ export default function BookingConfirmationPage() {
                     <Box>
                       <Text size="sm" c="dimmed" mb={4}>Duration</Text>
                       <Text fw={600} c="#284361">
-                        09:00 AM – 09:45 AM
+                        11:00 AM – 04:00 PM
                       </Text>
                     </Box>
                     <Box>
@@ -207,23 +207,23 @@ export default function BookingConfirmationPage() {
                   </Center>
                 </Box>
                 <Text size="sm" c="dimmed" ta="center">
-                  Show this QR at the Caspia Bali counter for verification.
+                  Show this QR at the Caspla Beach Club host desk for verification.
                 </Text>
               </Card>
 
               <Card withBorder radius="md" p="xl" bg="white">
                 <Title order={2} size="lg" fw={600} c="#284361" mb="lg">
-                  Travel Tips
+                  Visit Tips
                 </Title>
                 <Stack gap="lg">
                   <Group align="flex-start" gap="md">
                     <IconClock size={20} color="#284361" style={{ marginTop: 2, flexShrink: 0 }} />
                     <Box style={{ flex: 1 }}>
                       <Text fw={500} c="#284361" size="sm">
-                        Before You Go:
+                        Before You Arrive:
                       </Text>
                       <Text size="sm" c="dimmed">
-                        Arrive 30 minutes before departure.
+                        Arrive 20 minutes before your booking time.
                       </Text>
                     </Box>
                   </Group>
@@ -247,7 +247,7 @@ export default function BookingConfirmationPage() {
                     <IconUmbrella size={20} color="#284361" style={{ marginTop: 2, flexShrink: 0 }} />
                     <Box style={{ flex: 1 }}>
                       <Text size="sm" c="dimmed">
-                        Contact Caspia staff if weather conditions change.
+                        Contact Caspla staff for assistance during your visit.
                       </Text>
                     </Box>
                   </Group>
@@ -426,7 +426,7 @@ export default function BookingConfirmationPage() {
                 </ThemeIcon>
                 <Box style={{ flex: 1 }}>
                   <Text fw={500} c="#284361">
-                    Balinese Lunch Package
+                    Beach Club Lunch Package
                   </Text>
                   <Group gap="xs" mt={4}>
                     <IconCheck size={16} color="#2dbe8d" />
@@ -440,7 +440,7 @@ export default function BookingConfirmationPage() {
                 </ThemeIcon>
                 <Box style={{ flex: 1 }}>
                   <Text fw={500} c="#284361">
-                    Snorkeling Experience
+                    Pool Float Rental
                   </Text>
                   <Group gap="xs" mt={4}>
                     <IconCheck size={16} color="#2dbe8d" />
@@ -450,28 +450,27 @@ export default function BookingConfirmationPage() {
               </Group>
             </SimpleGrid>
             <Text size="sm" c="dimmed" mt="md">
-              Your add-on activities will be coordinated automatically upon
-              arrival at Nusa Penida.
+              Your add-ons will be prepared upon check-in at the beach club.
             </Text>
           </Card>
 
           {/* Boarding Information */}
           <Card withBorder radius="md" p="xl" mb="xl" bg="white">
             <Title order={2} size="xl" fw={600} c="#284361" mb="xl">
-              Boarding Information
+              Check-in Information
             </Title>
             <Stack gap="xl">
               <Group align="flex-start" gap="md">
                 <IconMapPin size={20} color="#284361" style={{ marginTop: 2, flexShrink: 0 }} />
                 <Box style={{ flex: 1 }}>
                   <Text fw={500} c="#284361" mb={4}>
-                    Departure Point
+                    Check-in Location
                   </Text>
                   <Text c="dark" mb={8}>
-                    Sanur Harbor, Denpasar, Bali
+                    Caspla Beach Club, Seminyak, Bali
                   </Text>
                   <Text size="sm" c="dimmed">
-                    Check-in counter near Caspia Ticket Office
+                    Host desk near main entrance
                   </Text>
                   <Anchor size="sm" c="#284361" fw={500} mt={8}>
                     View on Google Maps
@@ -482,10 +481,10 @@ export default function BookingConfirmationPage() {
                 <IconClock size={20} color="#284361" style={{ marginTop: 2, flexShrink: 0 }} />
                 <Box style={{ flex: 1 }}>
                   <Text fw={500} c="#284361" mb={4}>
-                    Boarding Time
+                    Check-in Time
                   </Text>
                   <Text c="dark">
-                    08:30 AM (30 minutes before departure)
+                    10:40 AM (20 minutes before start time)
                   </Text>
                 </Box>
               </Group>
@@ -493,11 +492,11 @@ export default function BookingConfirmationPage() {
                 <IconBriefcase size={20} color="#284361" style={{ marginTop: 2, flexShrink: 0 }} />
                 <Box style={{ flex: 1 }}>
                   <Text fw={500} c="#284361" mb={4}>
-                    Baggage Policy
+                    Venue Policy
                   </Text>
                   <Stack gap={4}>
-                    <Text c="dark">• 10kg cabin allowance</Text>
-                    <Text c="dark">• Extra baggage Rp 20.000/kg</Text>
+                    <Text c="dark">• Outside food and drinks not allowed</Text>
+                    <Text c="dark">• No glassware by the pool</Text>
                   </Stack>
                 </Box>
               </Group>
@@ -505,10 +504,10 @@ export default function BookingConfirmationPage() {
                 <IconPhone size={20} color="#284361" style={{ marginTop: 2, flexShrink: 0 }} />
                 <Box style={{ flex: 1 }}>
                   <Text fw={500} c="#284361" mb={4}>
-                    Emergency Contact
+                    Host Contact
                   </Text>
                   <Text c="dark">
-                    +62 812 3456 7890 (Caspia Harbor Office)
+                    +62 812 3456 7890 (Caspla Beach Club)
                   </Text>
                 </Box>
               </Group>

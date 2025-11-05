@@ -41,11 +41,11 @@ export default function TourBookingPage() {
             </GridCol>
             <GridCol span={{ base: 12, lg: 4 }}>
               <BookingSummary 
-                trip="Sanur → Nusa Penida" 
-                departureDate="12 Oct 2025, 09:00 AM" 
-                passengers="2 Adults" 
-                passengerPrice={200000} 
-                portFee={10000} 
+                trip="Jet Ski Session — Tanjung Benoa" 
+                departureDate="12 Oct 2025, 10:00 AM" 
+                passengers="2 Participants" 
+                passengerPrice={350000} 
+                portFee={20000} 
                 onContinue={() => router.push('/watersport/book/addons')}
                 buttonText="Continue to Add-Ons"
               />

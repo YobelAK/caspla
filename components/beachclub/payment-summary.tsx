@@ -39,11 +39,11 @@ export function PaymentSummary({
         {/* Payment Details */}
         <Stack gap="md">
           <Group justify="space-between" align="center">
-            <Text style={{ color: '#6b7280' }}>Adult (2x)</Text>
+            <Text style={{ color: '#6b7280' }}>Guests (2x)</Text>
             <Text style={{ fontWeight: 500, color: '#111827' }}>IDR 300,000</Text>
           </Group>
           <Group justify="space-between" align="center">
-            <Text style={{ color: '#6b7280' }}>Port Fee (2x)</Text>
+            <Text style={{ color: '#6b7280' }}>Venue Fee (2x)</Text>
             <Text style={{ fontWeight: 500, color: '#111827' }}>IDR 30,000</Text>
           </Group>
           
@@ -55,11 +55,11 @@ export function PaymentSummary({
               <Text size="sm" style={{ fontWeight: 500, color: '#111827' }}>IDR 200,000</Text>
             </Group>
             <Group justify="space-between" align="center">
-              <Text size="sm" style={{ color: '#6b7280' }}>Snorkeling Experience</Text>
+              <Text size="sm" style={{ color: '#6b7280' }}>Pool Float Rental</Text>
               <Text size="sm" style={{ fontWeight: 500, color: '#111827' }}>IDR 120,000</Text>
             </Group>
             <Group justify="space-between" align="center">
-              <Text size="sm" style={{ color: '#6b7280' }}>Balinese Lunch Package</Text>
+              <Text size="sm" style={{ color: '#6b7280' }}>Beach Club Lunch Package</Text>
               <Text size="sm" style={{ fontWeight: 500, color: '#111827' }}>IDR 85,000</Text>
             </Group>
           </Stack>

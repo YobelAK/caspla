@@ -35,22 +35,21 @@ export function AddOnDetailsModal({
   onAddToTrip,
   isAdded = false,
   addOn = {
-    id: 'watersport-adventure',
-    title: 'Watersport Adventure',
-    description: 'Try various water activities on Jet Ski in Nusa Penida!',
-    duration: '1.5 hours',
-    price: 150000,
-    originalPrice: 250000,
-    discount: '-40% OFF',
+    id: 'daybed-upgrade',
+    title: 'Daybed Upgrade',
+    description: 'Upgrade to premium daybed by the main pool',
+    duration: 'Full day',
+    price: 200000,
+    originalPrice: 300000,
+    discount: '33% OFF',
     image: 'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800&q=80',
-    location: 'Nusa Penida',
+    location: 'Seminyak',
     availability: 'Daily',
-    about: 'Experience the thrill of riding a jet ski in the beautiful waters of Bali. Our professional instructors will guide you through a 15-minute solo ride, ensuring both safety and maximum enjoyment.',
+    about: 'Enjoy a premium daybed with better views and comfort, perfect for relaxing by the pool.',
     included: [
-      'Professional equipment',
-      'Safety briefing',
-      'Instructor guidance',
-      'Insurance coverage'
+      'Premium daybed',
+      'Towel service',
+      'Welcome drink'
     ]
   }
 }: AddOnDetailsModalProps) {
@@ -128,7 +127,7 @@ export function AddOnDetailsModal({
                   <Stack gap={4}>
                     <Text size="sm" c="#6b7280">Location</Text>
                     <Text size="lg" fw={600} c="#284361">
-                      {addOn.location || 'Nusa Penida'}
+                      {addOn.location || 'Seminyak'}
                     </Text>
                   </Stack>
                 </Group>

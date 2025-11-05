@@ -1,5 +1,7 @@
+"use client";
 import React from 'react';
 import { Card, CardSection, Image, Badge, Text, Group, Button, Stack } from '@mantine/core';
+import Link from 'next/link';
 import { IconClock, IconArrowRight } from '@tabler/icons-react';
 
 interface OfferCardProps {
@@ -80,6 +82,8 @@ export function OfferCard({
           </Text>
         </Group>
         <Button
+          component={Link}
+          href="/promo/details"
           fullWidth
           rightSection={<IconArrowRight size={18} />}
           style={{

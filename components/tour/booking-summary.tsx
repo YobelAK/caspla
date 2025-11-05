@@ -23,11 +23,11 @@ interface BookingSummaryProps {
 }
 
 export function BookingSummary({ 
-  trip = 'Sanur → Nusa Penida',
-  departureDate = '12 Oct 2025, 09:00 AM',
+  trip = 'Ubud Cultural Highlights — Full Day',
+  departureDate = '12 Oct 2025, 08:00 AM',
   passengers = '2 Adults',
-  passengerPrice = 200000,
-  portFee = 10000,
+  passengerPrice = 450000,
+  portFee = 50000,
   addOns = [],
   nextStep = '/tour/book/addons', 
   nextStepLabel = 'Continue',
@@ -74,11 +74,11 @@ export function BookingSummary({
         
         <Stack gap="sm">
           <Group justify="space-between" align="center">
-            <Text size="sm" c="#374151">{passengers} (Indonesian)</Text>
+            <Text size="sm" c="#374151">{passengers} (Standard Package)</Text>
             <Text size="sm" fw={500} c="dark">IDR {passengerPrice.toLocaleString('id-ID')}</Text>
           </Group>
           <Group justify="space-between" align="center">
-            <Text size="sm" c="#374151">Port Fee</Text>
+            <Text size="sm" c="#374151">Service Fee</Text>
             <Text size="sm" fw={500} c="dark">IDR {portFee.toLocaleString('id-ID')}</Text>
           </Group>
           {addOns.map((addOn) => (

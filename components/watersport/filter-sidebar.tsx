@@ -22,12 +22,12 @@ export function FilterSidebar() {
     >
       <Stack gap="xl">
         <Title order={3} size="lg" style={{ fontWeight: 600, color: '#111827' }}>
-          Filter Tours
+          Filter Watersports
         </Title>
         
         {/* Search */}
         <TextInput
-          placeholder="Search tours..."
+          placeholder="Search watersports..."
           leftSection={<IconSearch size={18} style={{ color: '#9ca3af' }} />}
           styles={{
             input: {

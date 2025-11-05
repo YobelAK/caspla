@@ -35,22 +35,21 @@ export function AddOnDetailsModal({
   onAddToTrip,
   isAdded = false,
   addOn = {
-    id: 'watersport-adventure',
-    title: 'Watersport Adventure',
-    description: 'Try various water activities on Jet Ski in Nusa Penida!',
-    duration: '1.5 hours',
+    id: 'guided-temple-visit',
+    title: 'Guided Temple Visit',
+    description: 'Explore Ubud Royal Palace & Saraswati Temple with a local guide',
+    duration: '2 hours',
     price: 150000,
     originalPrice: 250000,
     discount: '-40% OFF',
-    image: 'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800&q=80',
-    location: 'Nusa Penida',
+    image: 'https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=800&q=80',
+    location: 'Ubud',
     availability: 'Daily',
-    about: 'Experience the thrill of riding a jet ski in the beautiful waters of Bali. Our professional instructors will guide you through a 15-minute solo ride, ensuring both safety and maximum enjoyment.',
+    about: 'Discover Ubud\'s heritage landmarks with insights from a certified local guide.',
     included: [
-      'Professional equipment',
-      'Safety briefing',
-      'Instructor guidance',
-      'Insurance coverage'
+      'Entrance fees',
+      'Local guide',
+      'Temple etiquette briefing'
     ]
   }
 }: AddOnDetailsModalProps) {

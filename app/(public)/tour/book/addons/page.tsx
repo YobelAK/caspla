@@ -38,52 +38,52 @@ export default function AddOnsPage() {
 
   const addOns: AddOn[] = [
     {
-      id: 'watersport-adventure',
-      title: 'Watersport Adventure',
-      description: 'Try various water activities on Jet Ski in Nusa Penida!',
-      duration: '1.5 hours',
+      id: 'guided-temple-visit',
+      title: 'Guided Temple Visit',
+      description: 'Explore Ubud Royal Palace & Saraswati Temple with a local guide',
+      duration: '2 hours',
       price: 150000,
       originalPrice: 250000,
       discount: '-40% OFF',
-      image: 'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800&q=80',
+      image: 'https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=800&q=80',
       badge: 'Popular' as const,
-      category: 'watersport',
-      location: 'Nusa Penida',
+      category: 'culture',
+      location: 'Ubud',
       availability: 'Daily',
-      about: 'Experience the thrill of riding a jet ski in the beautiful waters of Bali. Our professional instructors will guide you through a 15-minute solo ride, ensuring both safety and maximum enjoyment.',
-      included: ['Professional equipment', 'Safety briefing', 'Instructor guidance', 'Insurance coverage']
+      about: 'Discover Ubud\'s heritage landmarks with insights from a certified local guide.',
+      included: ['Entrance fees', 'Local guide', 'Temple etiquette briefing']
     },
     {
-      id: 'nusa-penida-tour',
-      title: 'Nusa Penida Tour Combo',
-      description: "Visit Kelingking Beach, Angel's Billabong & Crystal Bay",
-      duration: '8 hours',
-      price: 350000,
-      originalPrice: 500000,
-      discount: '30% OFF',
-      image: 'https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=800&q=80',
-      badge: 'Limited Offer' as const,
-      category: 'tours',
-      location: 'Nusa Penida',
-      availability: 'Daily',
-      about: 'Explore the most iconic spots in Nusa Penida with our comprehensive tour package. Visit the famous Kelingking Beach, swim at Angel\'s Billabong, and relax at Crystal Bay.',
-      included: ['Transportation', 'Professional guide', 'Entrance fees', 'Lunch', 'Snorkeling equipment']
-    },
-    {
-      id: 'vip-beach-club',
-      title: 'VIP Beach Club Access',
-      description: "Relax at Bali's premium beachfront club with drinks included",
-      duration: 'Full day',
+      id: 'rice-terrace-walk',
+      title: 'Jatiluwih Rice Terrace Walk',
+      description: 'Guided walk through UNESCO-listed rice terraces',
+      duration: '3 hours',
       price: 200000,
       originalPrice: 300000,
       discount: '33% OFF',
-      image: 'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800&q=80',
+      image: 'https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=800&q=80',
       badge: 'Popular' as const,
-      category: 'beach-club',
-      location: 'Seminyak',
+      category: 'nature',
+      location: 'Tabanan',
       availability: 'Daily',
-      about: 'Enjoy exclusive access to Bali\'s most luxurious beach club with premium amenities and stunning ocean views.',
-      included: ['Day bed access', 'Welcome drinks', 'Pool access', 'WiFi', 'Towel service']
+      about: 'Experience breathtaking landscapes and learn about Bali\'s Subak irrigation system.',
+      included: ['Guide', 'Mineral water', 'Photo spots']
+    },
+    {
+      id: 'traditional-dance',
+      title: 'Kecak Fire Dance Ticket',
+      description: 'Evening performance at Uluwatu Temple cliffside',
+      duration: '1.5 hours',
+      price: 175000,
+      originalPrice: 250000,
+      discount: '30% OFF',
+      image: 'https://images.unsplash.com/photo-1525041652405-cbcb8a5a4733?w=800&q=80',
+      badge: 'Limited Offer' as const,
+      category: 'culture',
+      location: 'Uluwatu',
+      availability: 'Daily',
+      about: 'Witness Bali\'s iconic Kecak & fire dance with sunset views.',
+      included: ['Show ticket', 'Seating', 'On-site assistance']
     },
     {
       id: 'balinese-lunch',
@@ -94,42 +94,11 @@ export default function AddOnsPage() {
       originalPrice: 120000,
       discount: '29% OFF',
       image: 'https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=800&q=80',
-      category: 'combo',
+      category: 'food',
       location: 'Ubud',
       availability: 'Daily',
       about: 'Savor authentic Balinese cuisine prepared with traditional recipes and fresh local ingredients.',
-      included: ['Traditional Balinese meal', 'Welcome drink', 'Cultural performance', 'Recipe card']
-    },
-    {
-      id: 'professional-photography',
-      title: 'Professional Photography',
-      description: 'Capture your memories with a professional photographer',
-      duration: '2 hours',
-      price: 300000,
-      originalPrice: 450000,
-      discount: '33% OFF',
-      image: 'https://images.unsplash.com/photo-1542038784456-1ea8e935640e?w=800&q=80',
-      badge: 'Limited Offer' as const,
-      category: 'combo',
-      location: 'Various locations',
-      availability: 'Daily',
-      about: 'Professional photography session to capture your best moments in Bali\'s most beautiful locations.',
-      included: ['Professional photographer', '50+ edited photos', 'Online gallery', 'Print-ready files']
-    },
-    {
-      id: 'snorkeling-experience',
-      title: 'Snorkeling Experience',
-      description: 'Explore the underwater world with professional guides',
-      duration: '3 hours',
-      price: 120000,
-      originalPrice: 200000,
-      discount: '-40% OFF',
-      image: 'https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=800&q=80',
-      category: 'watersport',
-      location: 'Nusa Penida',
-      availability: 'Daily',
-      about: 'Discover the vibrant underwater world of Nusa Penida with our experienced guides.',
-      included: ['Snorkeling equipment', 'Professional guide', 'Underwater photos', 'Safety briefing']
+      included: ['Traditional Balinese meal', 'Welcome drink', 'Cultural ambiance']
     }
   ];
 
@@ -219,11 +188,11 @@ export default function AddOnsPage() {
           </GridCol>
           <GridCol span={{ base: 12, lg: 4 }}>
               <BookingSummary 
-                trip="Sanur → Nusa Penida" 
-                departureDate="12 Oct 2025, 09:00 AM" 
+                trip="Ubud Cultural Highlights — Full Day" 
+                departureDate="12 Oct 2025, 08:00 AM" 
                 passengers="2 Adults" 
-                passengerPrice={200000} 
-                portFee={10000} 
+                passengerPrice={450000} 
+                portFee={50000} 
                 addOns={selectedAddOnsData} 
                 onContinue={() => router.push('/tour/book/payment')}
                 buttonText="Continue to Payment"

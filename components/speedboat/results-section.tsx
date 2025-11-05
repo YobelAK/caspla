@@ -5,7 +5,7 @@ import { ResultCard } from './result-card';
 const mockResults = [
   {
     id: 1,
-    provider: 'Caspia Bali',
+    provider: 'Caspla Bali',
     logo: 'https://via.placeholder.com/60',
     departureTime: '09:00',
     arrivalTime: '09:45',

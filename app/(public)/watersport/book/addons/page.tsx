@@ -180,8 +180,8 @@ export default function AddOnsPage() {
       {/* Back Button */}
       
 
-      {/* <ProgressIndicator currentStep={2} />
-      <Container size="xl" pt="xl">
+      <ProgressIndicator currentStep={2} />
+      {/*<Container size="xl" pt="xl">
         <Link href="/tour/book/" style={{ textDecoration: 'none' }}>
           <Group gap="xs" style={{ cursor: 'pointer', color: '#284361', transition: 'color 0.2s ease' }}>
             <IconArrowLeft size={20} />
@@ -219,11 +219,11 @@ export default function AddOnsPage() {
           </GridCol>
           <GridCol span={{ base: 12, lg: 4 }}>
               <BookingSummary 
-                trip="Sanur → Nusa Penida" 
-                departureDate="12 Oct 2025, 09:00 AM" 
-                passengers="2 Adults" 
-                passengerPrice={200000} 
-                portFee={10000} 
+                trip="Jet Ski Session — Tanjung Benoa" 
+                departureDate="12 Oct 2025, 10:00 AM" 
+                passengers="2 Participants" 
+                passengerPrice={350000} 
+                portFee={20000} 
                 addOns={selectedAddOnsData} 
                 onContinue={() => router.push('/watersport/book/payment')}
                 buttonText="Continue to Payment"

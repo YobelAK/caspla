@@ -1,5 +1,9 @@
+'use client';
+
 import React from 'react';
-import { Container, Box, Title, Text, Group, Stack } from '@mantine/core';
+import { Container, Box, Title, Text, Group, Stack, Drawer, Button } from '@mantine/core';
+import { useDisclosure } from '@mantine/hooks';
+import { IconFilter } from '@tabler/icons-react';
 import { Header } from '@/components/layout/header';
 import { Footer } from '@/components/layout/footer';
 import { SearchBar } from '@/components/speedboat/search-bar';
@@ -7,11 +11,13 @@ import { FilterSidebar } from '@/components/speedboat/filter-sidebar';
 import { ResultsSection } from '@/components/speedboat/results-section';
 
 export default function SpeedboatPage() {
+  const [sidebarOpened, { open, close }] = useDisclosure(false);
+
   return (
     <Box style={{ minHeight: '100vh', backgroundColor: '#f8f9fa' }}>
       <Header />
       
-      {/* Hero Section */}
+      {/* Hero Section
       <Box
         style={{
           background: 'linear-gradient(to right, #284361, #1a2c3d)',
@@ -41,17 +47,41 @@ export default function SpeedboatPage() {
             </Text>
           </Stack>
         </Container>
-      </Box>
+      </Box> */}
 
       {/* Search Section */}
-      <Container size="xl" style={{ marginTop: '-32px', position: 'relative', zIndex: 10 }}>
+      <Container size="xl" style={{ marginTop: '30px', position: 'relative', zIndex: 10 }}>
         <SearchBar />
       </Container>
+
+      {/* Mobile Filters Toggle */}
+      <Box hiddenFrom="md" style={{ paddingLeft: 16, paddingRight: 16, marginTop: 12 }}>
+        <Button
+          variant="outline"
+          leftSection={<IconFilter size={18} />}
+          onClick={open}
+          styles={{
+            root: {
+              borderColor: '#d1d5db',
+              color: '#1f2937',
+              backgroundColor: 'white'
+            }
+          }}
+        >
+          Filter Speedboats
+        </Button>
+      </Box>
+      <Drawer opened={sidebarOpened} onClose={close} title="Filters" size="md" padding="md">
+        <FilterSidebar />
+      </Drawer>
 
       {/* Main Content */}
       <Container size="xl" py="xl">
         <Group align="flex-start" gap="xl">
-          <FilterSidebar />
+          {/* Desktop Sidebar */}
+          <Box visibleFrom="md">
+            <FilterSidebar />
+          </Box>
           <Box style={{ flex: 1 }}>
             <Stack gap="md" mb="xl">
               <Title order={2} size="1.5rem" fw={700} c="#111827">

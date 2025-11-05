@@ -23,13 +23,13 @@ interface BookingSummaryProps {
 }
 
 export function BookingSummary({ 
-  trip = 'Sanur → Nusa Penida',
-  departureDate = '12 Oct 2025, 09:00 AM',
-  passengers = '2 Adults',
-  passengerPrice = 200000,
-  portFee = 10000,
+  trip = 'Jet Ski Session — Tanjung Benoa',
+  departureDate = '12 Oct 2025, 10:00 AM',
+  passengers = '2 Participants',
+  passengerPrice = 350000,
+  portFee = 20000,
   addOns = [],
-  nextStep = '/tour/book/addons', 
+  nextStep = '/watersport/book/addons', 
   nextStepLabel = 'Continue',
   showContinueButton = true,
   buttonText,
@@ -53,19 +53,19 @@ export function BookingSummary({
         
         <Stack gap="md">
           <Group justify="space-between" align="flex-start">
-            <Text size="sm" c="dimmed">Trip</Text>
+            <Text size="sm" c="dimmed">Activity</Text>
             <Text size="sm" fw={500} c="dark" ta="right">
               {trip}
             </Text>
           </Group>
           <Group justify="space-between" align="flex-start">
-            <Text size="sm" c="dimmed">Departure Date</Text>
+            <Text size="sm" c="dimmed">Session Date</Text>
             <Text size="sm" fw={500} c="dark">
               {departureDate}
             </Text>
           </Group>
           <Group justify="space-between" align="flex-start">
-            <Text size="sm" c="dimmed">Passengers</Text>
+            <Text size="sm" c="dimmed">Participants</Text>
             <Text size="sm" fw={500} c="dark">{passengers}</Text>
           </Group>
         </Stack>
@@ -78,7 +78,7 @@ export function BookingSummary({
             <Text size="sm" fw={500} c="dark">IDR {passengerPrice.toLocaleString('id-ID')}</Text>
           </Group>
           <Group justify="space-between" align="center">
-            <Text size="sm" c="#374151">Port Fee</Text>
+            <Text size="sm" c="#374151">Equipment Fee</Text>
             <Text size="sm" fw={500} c="dark">IDR {portFee.toLocaleString('id-ID')}</Text>
           </Group>
           {addOns.map((addOn) => (

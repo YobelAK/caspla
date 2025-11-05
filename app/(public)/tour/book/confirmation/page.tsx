@@ -114,13 +114,13 @@ export default function BookingConfirmationPage() {
                     <Box>
                       <Text size="sm" c="dimmed" mb={4}>Provider Name</Text>
                       <Text fw={600} c="#284361">
-                        Caspia Bali Speedboat
+                        Caspia Bali Tours
                       </Text>
                     </Box>
                     <Box>
-                      <Text size="sm" c="dimmed" mb={4}>Route</Text>
+                      <Text size="sm" c="dimmed" mb={4}>Tour</Text>
                       <Text fw={600} c="#284361">
-                        Sanur → Nusa Penida
+                        Ubud Cultural Highlights — Full Day
                       </Text>
                     </Box>
                     <Box>
@@ -136,7 +136,7 @@ export default function BookingConfirmationPage() {
                     <Box>
                       <Text size="sm" c="dimmed" mb={4}>Duration</Text>
                       <Text fw={600} c="#284361">
-                        09:00 AM – 09:45 AM
+                        08:00 AM – 05:00 PM
                       </Text>
                     </Box>
                     <Box>
@@ -207,13 +207,13 @@ export default function BookingConfirmationPage() {
                   </Center>
                 </Box>
                 <Text size="sm" c="dimmed" ta="center">
-                  Show this QR at the Caspia Bali counter for verification.
+                  Show this QR at the Caspia Tours check-in desk for verification.
                 </Text>
               </Card>
 
               <Card withBorder radius="md" p="xl" bg="white">
                 <Title order={2} size="lg" fw={600} c="#284361" mb="lg">
-                  Travel Tips
+                  Tour Tips
                 </Title>
                 <Stack gap="lg">
                   <Group align="flex-start" gap="md">
@@ -223,7 +223,7 @@ export default function BookingConfirmationPage() {
                         Before You Go:
                       </Text>
                       <Text size="sm" c="dimmed">
-                        Arrive 30 minutes before departure.
+                        Arrive 15 minutes before meeting time.
                       </Text>
                     </Box>
                   </Group>
@@ -458,20 +458,20 @@ export default function BookingConfirmationPage() {
           {/* Boarding Information */}
           <Card withBorder radius="md" p="xl" mb="xl" bg="white">
             <Title order={2} size="xl" fw={600} c="#284361" mb="xl">
-              Boarding Information
+              Meeting Information
             </Title>
             <Stack gap="xl">
               <Group align="flex-start" gap="md">
                 <IconMapPin size={20} color="#284361" style={{ marginTop: 2, flexShrink: 0 }} />
                 <Box style={{ flex: 1 }}>
                   <Text fw={500} c="#284361" mb={4}>
-                    Departure Point
+                    Meeting Point
                   </Text>
                   <Text c="dark" mb={8}>
-                    Sanur Harbor, Denpasar, Bali
+                    Ubud Palace, Gianyar, Bali
                   </Text>
                   <Text size="sm" c="dimmed">
-                    Check-in counter near Caspia Ticket Office
+                    Meet near the main entrance of Ubud Palace
                   </Text>
                   <Anchor size="sm" c="#284361" fw={500} mt={8}>
                     View on Google Maps
@@ -482,10 +482,10 @@ export default function BookingConfirmationPage() {
                 <IconClock size={20} color="#284361" style={{ marginTop: 2, flexShrink: 0 }} />
                 <Box style={{ flex: 1 }}>
                   <Text fw={500} c="#284361" mb={4}>
-                    Boarding Time
+                    Meeting Time
                   </Text>
                   <Text c="dark">
-                    08:30 AM (30 minutes before departure)
+                    07:45 AM (15 minutes before start)
                   </Text>
                 </Box>
               </Group>
@@ -493,11 +493,11 @@ export default function BookingConfirmationPage() {
                 <IconBriefcase size={20} color="#284361" style={{ marginTop: 2, flexShrink: 0 }} />
                 <Box style={{ flex: 1 }}>
                   <Text fw={500} c="#284361" mb={4}>
-                    Baggage Policy
+                    What to Bring
                   </Text>
                   <Stack gap={4}>
-                    <Text c="dark">• 10kg cabin allowance</Text>
-                    <Text c="dark">• Extra baggage Rp 20.000/kg</Text>
+                    <Text c="dark">• Comfortable walking shoes</Text>
+                    <Text c="dark">• Hat & sunscreen</Text>
                   </Stack>
                 </Box>
               </Group>
@@ -508,7 +508,7 @@ export default function BookingConfirmationPage() {
                     Emergency Contact
                   </Text>
                   <Text c="dark">
-                    +62 812 3456 7890 (Caspia Harbor Office)
+                    +62 812 3456 7890 (Caspia Tours Office)
                   </Text>
                 </Box>
               </Group>

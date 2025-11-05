@@ -1,5 +1,6 @@
 import React from 'react';
 import { Box, Container, Title, Text, Button, Stack } from '@mantine/core';
+import homeImg from '../../app/(public)/pic/home.png';
 
 export function Hero() {
   return (
@@ -8,7 +9,10 @@ export function Hero() {
         position: 'relative',
         height: '500px',
         width: '100%',
-        background: 'linear-gradient(135deg, #284361 0%, #1e3a5f 100%)',
+        backgroundImage:
+          `linear-gradient(rgba(40,67,97,0.35), rgba(30,58,95,0.35)), url(${homeImg.src})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'flex-start'

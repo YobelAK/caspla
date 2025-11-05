@@ -42,11 +42,11 @@ export default function TourBookingPage() {
             </GridCol>
             <GridCol span={{ base: 12, lg: 4 }}>
               <BookingSummary 
-                trip="Sanur → Nusa Penida" 
-                departureDate="12 Oct 2025, 09:00 AM" 
+                trip="Ubud Cultural Highlights — Full Day" 
+                departureDate="12 Oct 2025, 08:00 AM" 
                 passengers="2 Adults" 
-                passengerPrice={200000} 
-                portFee={10000} 
+                passengerPrice={450000} 
+                portFee={50000} 
                 onContinue={() => router.push('/tour/book/addons')}
                 buttonText="Continue to Add-Ons"
               />

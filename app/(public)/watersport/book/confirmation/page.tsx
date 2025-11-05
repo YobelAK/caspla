@@ -61,7 +61,7 @@ export default function BookingConfirmationPage() {
               <IconCheck size={32} />
             </ThemeIcon>
             <Title order={1} size="2xl" fw={700} c="#284361" ta="center">
-              Your Tour Booking is Confirmed!
+              Your Watersport Booking is Confirmed!
             </Title>
             <Text c="dimmed" ta="center" mb="xs">
               Thank you for booking with Caspia Bali. Your payment via QRIS has
@@ -114,13 +114,13 @@ export default function BookingConfirmationPage() {
                     <Box>
                       <Text size="sm" c="dimmed" mb={4}>Provider Name</Text>
                       <Text fw={600} c="#284361">
-                        Caspia Bali Speedboat
+                        Caspia Bali Watersport
                       </Text>
                     </Box>
                     <Box>
-                      <Text size="sm" c="dimmed" mb={4}>Route</Text>
+                      <Text size="sm" c="dimmed" mb={4}>Location</Text>
                       <Text fw={600} c="#284361">
-                        Sanur → Nusa Penida
+                        Tanjung Benoa, Bali
                       </Text>
                     </Box>
                     <Box>
@@ -134,9 +134,9 @@ export default function BookingConfirmationPage() {
                       <Text fw={600} c="#284361">QRIS</Text>
                     </Box>
                     <Box>
-                      <Text size="sm" c="dimmed" mb={4}>Duration</Text>
+                      <Text size="sm" c="dimmed" mb={4}>Session Time</Text>
                       <Text fw={600} c="#284361">
-                        09:00 AM – 09:45 AM
+                        10:00 AM – 11:00 AM
                       </Text>
                     </Box>
                     <Box>
@@ -458,20 +458,20 @@ export default function BookingConfirmationPage() {
           {/* Boarding Information */}
           <Card withBorder radius="md" p="xl" mb="xl" bg="white">
             <Title order={2} size="xl" fw={600} c="#284361" mb="xl">
-              Boarding Information
+              Activity Information
             </Title>
             <Stack gap="xl">
               <Group align="flex-start" gap="md">
                 <IconMapPin size={20} color="#284361" style={{ marginTop: 2, flexShrink: 0 }} />
                 <Box style={{ flex: 1 }}>
                   <Text fw={500} c="#284361" mb={4}>
-                    Departure Point
+                    Meeting Point
                   </Text>
                   <Text c="dark" mb={8}>
-                    Sanur Harbor, Denpasar, Bali
+                    Tanjung Benoa Watersport Center, Bali
                   </Text>
                   <Text size="sm" c="dimmed">
-                    Check-in counter near Caspia Ticket Office
+                    Check-in counter near Caspia Watersport Desk
                   </Text>
                   <Anchor size="sm" c="#284361" fw={500} mt={8}>
                     View on Google Maps
@@ -482,10 +482,10 @@ export default function BookingConfirmationPage() {
                 <IconClock size={20} color="#284361" style={{ marginTop: 2, flexShrink: 0 }} />
                 <Box style={{ flex: 1 }}>
                   <Text fw={500} c="#284361" mb={4}>
-                    Boarding Time
+                    Meeting Time
                   </Text>
                   <Text c="dark">
-                    08:30 AM (30 minutes before departure)
+                    09:30 AM (30 minutes before session)
                   </Text>
                 </Box>
               </Group>
@@ -493,11 +493,11 @@ export default function BookingConfirmationPage() {
                 <IconBriefcase size={20} color="#284361" style={{ marginTop: 2, flexShrink: 0 }} />
                 <Box style={{ flex: 1 }}>
                   <Text fw={500} c="#284361" mb={4}>
-                    Baggage Policy
+                    Equipment Policy
                   </Text>
                   <Stack gap={4}>
-                    <Text c="dark">• 10kg cabin allowance</Text>
-                    <Text c="dark">• Extra baggage Rp 20.000/kg</Text>
+                    <Text c="dark">• Life jacket provided and mandatory</Text>
+                    <Text c="dark">• Damage deposit may apply for misuse</Text>
                   </Stack>
                 </Box>
               </Group>
@@ -508,7 +508,7 @@ export default function BookingConfirmationPage() {
                     Emergency Contact
                   </Text>
                   <Text c="dark">
-                    +62 812 3456 7890 (Caspia Harbor Office)
+                    +62 812 3456 7890 (Caspia Watersport Center)
                   </Text>
                 </Box>
               </Group>

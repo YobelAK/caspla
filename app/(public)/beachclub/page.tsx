@@ -1,5 +1,9 @@
+'use client';
+
 import React from 'react';
-import { Box, Container, Group } from '@mantine/core';
+import { Box, Container, Group, Drawer, Button } from '@mantine/core';
+import { useDisclosure } from '@mantine/hooks';
+import { IconFilter } from '@tabler/icons-react';
 import { Header } from '@/components/layout/header';
 import { Footer } from '@/components/layout/footer';
 import { Hero } from '@/components/beachclub/hero';
@@ -9,11 +13,33 @@ import { BeachClubGrid } from '@/components/beachclub/beach-club-grid';
 import { TopDestinations } from '@/components/watersport/top-destinations';
 
 export default function BeachClubPage() {
+  const [sidebarOpened, { open, close }] = useDisclosure(false);
+
   return (
     <Box style={{ minHeight: '100vh', backgroundColor: '#f9fafb' }}>
       <Header />
       <Hero />
       <SearchBar />
+      {/* Mobile Filters Toggle */}
+      <Box hiddenFrom="md" style={{ paddingLeft: 16, paddingRight: 16, marginTop: 12 }}>
+        <Button
+          variant="outline"
+          leftSection={<IconFilter size={18} />}
+          onClick={open}
+          styles={{
+            root: {
+              borderColor: '#d1d5db',
+              color: '#1f2937',
+              backgroundColor: 'white'
+            }
+          }}
+        >
+          Filter Beach Clubs
+        </Button>
+      </Box>
+      <Drawer opened={sidebarOpened} onClose={close} title="Filters" size="md" padding="md">
+        <FiltersSidebar />
+      </Drawer>
       
       {/* Main Content */}
       <Container 
@@ -26,7 +52,10 @@ export default function BeachClubPage() {
         }}
       >
         <Group align="flex-start" gap={32} style={{ flexWrap: 'nowrap' }}>
-          <FiltersSidebar />
+          {/* Desktop Sidebar */}
+          <Box visibleFrom="md">
+            <FiltersSidebar />
+          </Box>
           <BeachClubGrid />
         </Group>
       </Container>
