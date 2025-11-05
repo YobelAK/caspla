@@ -1,7 +1,6 @@
 "use client";
 
 import { cn } from "@/lib/utils";
-import { createClient } from "@/lib/supabase/client";
 import { Button } from "@/components/ui/button";
 import {
   Card,
@@ -28,18 +27,19 @@ export function LoginForm({
 
   const handleLogin = async (e: React.FormEvent) => {
     e.preventDefault();
-    const supabase = createClient();
     setIsLoading(true);
     setError(null);
 
     try {
-      const { error } = await supabase.auth.signInWithPassword({
-        email,
-        password,
-      });
-      if (error) throw error;
-      // Redirect ke halaman profile setelah login berhasil
-      router.push("/profile");
+      // Validasi kredensial sederhana sesuai permintaan
+      const isValidEmail = email.trim().toLowerCase() === "caspla@abc";
+      const isValidPassword = password === "1234";
+
+      if (isValidEmail && isValidPassword) {
+        router.push("/profile");
+      } else {
+        setError("Email atau password salah");
+      }
     } catch (error: unknown) {
       setError(error instanceof Error ? error.message : "An error occurred");
     } finally {

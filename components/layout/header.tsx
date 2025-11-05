@@ -110,7 +110,7 @@ export function Header() {
             >
               IDR
             </Button>
-            <Link href="/profile" style={{ textDecoration: 'none' }}>
+            <Link href="/auth/login" style={{ textDecoration: 'none' }}>
               <Button variant="subtle" color="gray" size="sm">
                 Login
               </Button>
@@ -154,9 +154,11 @@ export function Header() {
               ))}
               <Divider my="md" />
               <Group>
-                <Button variant="subtle" color="gray" size="sm">
-                  Login
-                </Button>
+                <Link href="/auth/login" style={{ textDecoration: 'none' }} onClick={closeMobileMenu}>
+                  <Button variant="subtle" color="gray" size="sm">
+                    Login
+                  </Button>
+                </Link>
                 <Button 
                   color="primary" 
                   size="sm"

@@ -47,8 +47,8 @@ export async function updateSession(request: NextRequest) {
   const { data } = await supabase.auth.getClaims();
   const user = data?.claims;
 
-  // Only protect explicit routes. Public pages (e.g., homepage, tour, speedboat, etc.) remain accessible.
-  const protectedPaths = ["/profile", "/protected"];
+  // Only protect explicit routes. Public pages (e.g., homepage, tour, speedboat, profile, etc.) remain accessible.
+  const protectedPaths = ["/protected"];
   const pathname = request.nextUrl.pathname;
   const isProtected = protectedPaths.some(
     (p) => pathname === p || pathname.startsWith(`${p}/`),
